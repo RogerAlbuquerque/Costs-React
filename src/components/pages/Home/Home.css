@@ -1,0 +1,22 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
+ .home span{
+font-size: 35px;
+}
+
+.home span{
+    background-color: rgb(37, 37, 37);
+    padding: .2em;
+    color: rgb(255, 181, 44);
+}
+
+.home img{
+    width: 30%;
+}
+
+
