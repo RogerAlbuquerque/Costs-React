@@ -2,7 +2,7 @@ export default function Contact(){
 
     return  (
         <article>
-            <h1>EMPRESA</h1>
+            <h1>CONTATO</h1>
         </article>
    )
     

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 16px;
+
     
 }
 a{
@@ -21,4 +22,5 @@ h1{
 
 #root{
     height: 100vh;
+    background-color: rgb(225, 225, 225);
 }

@@ -1,5 +1,25 @@
+.NewProject section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+
 form{
     display: flex;
     flex-direction: column;
-    gap: .4rem;
+    gap: .8rem;
+    font-weight: bold;
+}
+
+input, select{
+    background-color: white;
+   border: none;
+   padding: .4rem;
+}
+
+form button{
+    margin-top: .2rem;
+    width: 40%;
 }
