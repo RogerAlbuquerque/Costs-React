@@ -8,20 +8,34 @@ import Button from '../../../extraComponents/Buttons'
 
 export default function NewProject(){
 
-    function cadUser (e) {
-        e.preventDefault()
-        let Pdata = {
-                Pname:e.target.projectName.value,
-                Pbudget:e.target.projectBudget.value,
-                Pcategory:e.target.projectCategory.value
-        }
-        
-       setFormData(prevState => [...prevState, Pdata])
-    }
 
-       
+        function cadUser(x){
+            x.preventDefault()
+            fetch('http://localhost:5000/projetos',{
+                method: "POST",                	
+                body: JSON.stringify(newProject),			
+                headers:{
+                    "content-type": "application/json; charset=UTF-8" 
+                },
+                
+            })             
+            .then(res => res.json())
+            .then((r=> console.log("Projeto postado:")))
+            .catch(error=> console.log("Deu erro em algum lugar --" + error))
+
+            console.log(newProject)
+    
+            
+        }
+
+        function handleForm(x){
+              setnewProject({ ...newProject, [x.target.id]: x.target.value}) 
+        }
+           
   
         const [formData, setFormData] = useState([])
+        const [newProject, setnewProject] = useState()
+
     return(
         <article className="NewProject">
             <section>
@@ -30,23 +44,39 @@ export default function NewProject(){
 
                 <form onSubmit={cadUser}>
 
-                    <label htmlFor="projectName">Nome do projeto:</label>
-                    <input type="text" id='projectName' placeholder='Digite o nome do projeto' />
+                    <label htmlFor="PName">Nome do projeto:</label>
+                    <input
+                        type="text" 
+                        id='PName' 
+                        placeholder='Digite o nome do projeto' 
+                        onChange={(e)=>handleForm(e)}
+                        required
+                    />
                 
-                    <label htmlFor="projectBudget">Orçamento do projeto:</label>
-                    <input type="number" id='projectBudget'  placeholder='Digite o orçamento total' />
+                    <label htmlFor="PBudget">Orçamento do projeto:</label>
+                    <input 
+                        type="number" 
+                        id='PBudget'  
+                        placeholder='Digite o orçamento total' 
+                        onChange={(e)=>handleForm(e)}
+                        required
+                    />
                 
-                    <label htmlFor="projectCategory">Selecione a categoría:</label>
-                    <select name="" id="projectCategory">
-                        <option value=''>Selecione uma opção</option>
-                        <option value="primeira">Primeira</option>
-                        <option value="segunda">Segunda</option>
+                    <label htmlFor="PCategory">Selecione a categoría:</label>
+
+                    <select id="PCategory" onChange={(e) => handleForm(e)} required >
+                        <option value="">                   Selecione uma opção </option>
+                        <option value="infra">              Infra               </option>
+                        <option value="desenvolvimento">    Desenvolvimento     </option>
+                        <option value="designe">            Designe             </option>
+                        <option value="planejamento">       planejamento        </option>
                     </select>
                            
                     <Button />                               
 
                 </form>
-               
+    
+
             </section>
             
                 
