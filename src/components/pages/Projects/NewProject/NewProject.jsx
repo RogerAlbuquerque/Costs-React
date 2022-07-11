@@ -1,40 +1,47 @@
 import {useState} from 'react'
-import './NewProject.css'
+import {useNavigate} from 'react-router-dom'
 import Button from '../../../extraComponents/Buttons'
-
+import './NewProject.css'
 
 
 
 
 export default function NewProject(){
 
+    const navigate = useNavigate()
 
-        function cadUser(x){
-            x.preventDefault()
-            fetch('http://localhost:5000/projetos',{
-                method: "POST",                	
-                body: JSON.stringify(newProject),			
-                headers:{
-                    "content-type": "application/json; charset=UTF-8" 
-                },
-                
-            })             
-            .then(res => res.json())
-            .then((r=> console.log("Projeto postado:")))
-            .catch(error=> console.log("Deu erro em algum lugar --" + error))
-
-            console.log(newProject)
-    
+    function cadUser(x){
+        x.preventDefault()
+        fetch('http://localhost:5000/projetos',{
+            method: "POST",                	
+            body: JSON.stringify(newProject),			
+            headers:{
+                "content-type": "application/json; charset=UTF-8" 
+            },
             
-        }
+        })             
+        .then(res => res.json())
+        .then((r=> {
+            alert("Projeto postado com sucesso")
+            navigate("/projects")
 
-        function handleForm(x){
-              setnewProject({ ...newProject, [x.target.id]: x.target.value}) 
-        }
-           
-  
-        const [formData, setFormData] = useState([])
-        const [newProject, setnewProject] = useState()
+            
+        }))
+        .catch(error=> console.log("Deu erro em algum lugar --" + error))
+
+        console.log(newProject)
+
+        
+    }
+
+    function handleForm(x){
+
+            setnewProject({ ...newProject, [x.target.id]: x.target.value}) 
+    }
+       
+
+    const [formData, setFormData] = useState([])
+    const [newProject, setnewProject] = useState()
 
     return(
         <article className="NewProject">
@@ -72,10 +79,10 @@ export default function NewProject(){
                         <option value="planejamento">       planejamento        </option>
                     </select>
                            
-                    <Button />                               
+                    <Button nomeBotao="Criar Projeto"/>                               
 
                 </form>
-    
+               
 
             </section>
             
