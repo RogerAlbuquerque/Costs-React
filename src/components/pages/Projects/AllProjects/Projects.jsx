@@ -4,6 +4,14 @@ import Button from '../../../extraComponents/Buttons'
 import BoxProjects from './boxProjects'
 
 
+function getApi(){
+    fetch('http://localhost:5000/projetos')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error("Deu um erro por causa disso aqui: " + error))
+}
+
+
 export default function Projects(){
 
     return(
@@ -15,6 +23,8 @@ export default function Projects(){
 
         <BoxProjects title="Nome do Projeto" budjet="5000" category="Desenvolvimento"/>
            
+
+        <button onClick={getApi}>Teste</button>
         </article>
     ) 
 
