@@ -1,28 +1,46 @@
 {
   "projetos": [
     {
-      "PName": "Contratar um dev Frontend",
+      "PName": "Contratar dev Frontend",
       "PBudget": "6000",
       "PCategory": "desenvolvimento",
       "id": 1
     },
     {
-      "PName": "Scrum Master",
+      "PName": "Contratar Scrum Master",
       "PBudget": "5400",
       "PCategory": "infra",
       "id": 2
     },
     {
-      "PName": "Contratar um gerente senior para devs",
+      "PName": "Gerente sor. de devs",
       "PBudget": "15000",
       "PCategory": "planejamento",
       "id": 3
     },
     {
-      "PName": "Contratar UX designe",
+      "PName": "EquipeUX designe",
       "PBudget": "5000",
       "PCategory": "designe",
       "id": 4
+    },
+    {
+      "PName": "Novo Banco de dados",
+      "PBudget": "20000",
+      "PCategory": "infra",
+      "id": 5
+    },
+    {
+      "PName": "Aumentar Designers",
+      "PBudget": "40000",
+      "PCategory": "designe",
+      "id": 6
+    },
+    {
+      "PName": "novo projeto",
+      "PBudget": "50000",
+      "PCategory": "planejamento",
+      "id": 7
     }
   ]
 }

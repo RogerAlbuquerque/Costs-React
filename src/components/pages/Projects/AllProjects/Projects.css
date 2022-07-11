@@ -1,6 +1,5 @@
 .allProjects {
     display: flex;
-    flex-direction: column;   
     padding: 1.5em 4em;   
 }
 
@@ -12,29 +11,30 @@
 }
 
 /* ---------------------- CONFIGURAÇÃO DAS CAIXAS COM OS PROJETOS DENTRO -------------------------------*/
-.boxProjects{
-    display: flex;
-    width: 100%;
-
-}
 
 .projects{
-    width: 30%;
+    width: 280px; 
+    height: 280px;   
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1.5rem;
     border: 2px solid rgb(184, 184, 184);
     border-radius: 4px;
-    padding: 1.5rem .8rem;
-   
-    
+    padding: 1.5rem .8rem;    
+}
+
+.projects div:first-child{
+    display: flex;
+
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .projects h1{
-    overflow-wrap: break-word;
     background-color: rgb(37, 37, 37);
     color: rgb(255, 181, 44);
-    padding: .4rem;
+    padding: .2rem;
 }
 
 /* START configuração da bolinha do lado de category */
@@ -61,7 +61,10 @@
 
 .divButtons{
     display: flex;
+    
+    align-items: end;
     gap: .8rem;
+
 }
 
 .divButtons button{
@@ -70,6 +73,7 @@
     gap: .4rem;
     border: 1px solid black;
     cursor: pointer;
+
 }
 
 .divButtons button:hover{
