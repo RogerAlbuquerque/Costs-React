@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import './Projects.css'
 import Button from '../../../extraComponents/Buttons'
-import BoxProjects from './boxProjects'
+import BoxProjects from './boxesProjects/boxProjects'
 
 export default function Projects(){
 
@@ -26,24 +26,26 @@ export default function Projects(){
     },[])
 
 
-
     return(
         <article className='allProjects'>
             <section className='headerallProjects'>
-                <h1 >Meus Projetos:</h1>
+                <h1>Meus Projetos:</h1>
                 <Link to="/newproject"> <Button nomeBotao="Criar projeto"/> </Link>
             </section>
                 {apiData.length > 0 && apiData.map((dados)=>   
                     <BoxProjects 
                         title={dados.PName} 
                         budget={dados.PBudget} 
-                        category={dados.PCategory} 
-                        key={dados.id}
+                        category={dados.PCategory}                        
+                        id={dados.id}
+                        key={dados.PName}
                     /> 
                 )}
 
-                 
 
+
+                 
+                   
         </article>
     ) 
 

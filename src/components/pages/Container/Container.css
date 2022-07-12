@@ -9,8 +9,6 @@
 .container article{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    flex-wrap: wrap;
     gap: .5rem;
 }
 

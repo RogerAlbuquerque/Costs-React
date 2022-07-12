@@ -1,0 +1,33 @@
+.services{
+    display: flex;
+    padding: 1.5em 4em;  
+    flex-direction: column;
+    align-items: start;
+    
+}
+.services p {
+    color:black;
+}
+
+.handleServiceArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.addService{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1rem 0rem;
+    
+}
+.headerServices{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.headerServices h1{
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 181, 44);
+    padding: .4rem;
+}

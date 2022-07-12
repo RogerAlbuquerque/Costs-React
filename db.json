@@ -25,22 +25,16 @@
       "id": 4
     },
     {
-      "PName": "Novo Banco de dados",
-      "PBudget": "20000",
-      "PCategory": "infra",
+      "PName": "Projeto de teste",
+      "PBudget": "1000000",
+      "PCategory": "planejamento",
       "id": 5
     },
     {
-      "PName": "Aumentar Designers",
-      "PBudget": "40000",
-      "PCategory": "designe",
+      "PName": "Mais um projeto só para testar",
+      "PBudget": "20000000",
+      "PCategory": "infra",
       "id": 6
-    },
-    {
-      "PName": "novo projeto",
-      "PBudget": "50000",
-      "PCategory": "planejamento",
-      "id": 7
     }
   ]
 }
