@@ -2,23 +2,10 @@
     display: flex;
     padding: 1.5em 4em;  
     flex-direction: column;
-    align-items: start;
-    
+    align-items: start;    
 }
 .services p {
     color:black;
-}
-
-.handleServiceArea{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.addService{
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 1rem 0rem;
-    
 }
 .headerServices{
     display: flex;
@@ -31,3 +18,37 @@
     color: rgb(255, 181, 44);
     padding: .4rem;
 }
+.handleServiceArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.handleServiceArea section:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: .6rem 0rem;
+}
+.addServiceHeader{
+    display: flex;
+    justify-content: space-between;    
+   
+}
+.addServices{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 2rem 0rem;
+}
+
+
+.services form{
+    display: none;
+    padding-top: 1rem;
+}
+.services form button{
+    width: 15%;
+}
+.listServices{
+    /* sadfasdfasd */
+}
+

@@ -9,7 +9,6 @@ export default function Projects(){
     const [apiData, setapiData] = useState([]);
 
     useEffect(()=>{
-        console.log("RODOU")
         fetch('http://localhost:5000/projetos', {
             method:'GET',
             headers:{
