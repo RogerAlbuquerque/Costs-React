@@ -1,15 +1,14 @@
 import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
+import BoxProjects from '../AllProjects/boxesProjects/boxProjects'
 import "./Services.css"
+import Form from '../../../extraComponents/Forms/forms'
 import Button from '../../../extraComponents/Buttons'
+
+
+
+
 export default function Services(){
-
-
-
-
-    const { id } = useParams();
-    const [dataService, setdataService] = useState ([])
-    const [buttonService, setbuttonService] = useState("Adicionar serviço")
 
     useEffect(()=>{
         fetch(`http://localhost:5000/projetos/${id}`, {
@@ -25,8 +24,8 @@ export default function Services(){
         .catch(error => console.error("Deu um erro por causa disso aqui: " + error))
     },[])
 
-    function editProj(){
-        let form = document.forms[0].style
+    function addService(){
+        let form = document.forms[1].style
         // let button = 
             if(form.display != "flex"){
                 form.display = "flex"
@@ -38,18 +37,124 @@ export default function Services(){
             }
     }
 
+    function buttonEditForm(){
+        let form = document.forms[0].style
+        let dataProject = document.getElementById('projectData')
+        // let button = 
+            if(form.display != "flex"){
+                form.display = "flex"
+                setEditProj("Sair")
+                dataProject.style.display = "none"
+            }
+            else if (form.display == "flex"){
+                form.display = "none"
+                setEditProj("Editar projeto")
+                dataProject.style.display = "flex"
+            }
+    }
+    
+
+
+    function cadService (x){
+        x.preventDefault(x)
+        
+        dataService.services.push(serviceForm)
+        
+         fetch(`http://localhost:5000/projetos/${id}`,{
+            method: "PATCH",                	
+            body: JSON.stringify(dataService),			
+            headers:{
+                "content-type": "application/json; charset=UTF-8" 
+            },
+            
+        })             
+        .then(res => res.json())
+        .then((r=> {
+            alert("Projeto postado com sucesso")
+            location.reload()           
+
+            
+        }))
+        .catch(error=> console.log("Deu erro em algum lugar --" + error))
+
+      
+        
+    }
+
+    function updateProjectData(x){
+        x.preventDefault(x)
+
+         fetch(`http://localhost:5000/projetos/${id}`,{
+            method: "PATCH",                	
+            body: JSON.stringify(editForm),			
+            headers:{
+                "content-type": "application/json; charset=UTF-8" 
+            },
+            
+        })             
+        .then(res => res.json())
+        .then((r=> {
+            alert("PROJETO ATUALIZADO") 
+            location.reload()        
+
+            
+        }))
+        .catch(error=> console.log("Deu erro em algum lugar --" + error))
+
+        
+
+        console.log(editForm)
+    }
+       
+
+    function handleEditForm(x){
+        setEditForm({ ...editForm, [x.target.id]: x.target.value}) 
+    }
+
+    function handleFormServices(x){
+        setServiceForm({ ...serviceForm, [x.target.id]: x.target.value}) 
+    }
+
+
+//----------------  HOOKS ---------------
+
+    const { id } = useParams();
+    const [dataService, setdataService] = useState ([])
+    
+
+    const [buttonService, setbuttonService] = useState("Adicionar serviço")
+    const [editProj, setEditProj] = useState("Editar projeto")
+
+    const [serviceForm, setServiceForm] = useState ()
+    const [editForm, setEditForm] = useState ()
+    
 
     return(
     
         <article className="services">
             <section className="headerServices">
                 <h1>{dataService.PName}</h1>
-                <Button nomeBotao="Editar projeto"/>
+                <Button nomeBotao={editProj} handleFunc={buttonEditForm}/>
             </section>
+
+            
+            
+            <section className='EditForm'>
+                <Form 
+                    handleFormFunc={handleEditForm} 
+                    submitFunc={updateProjectData} 
+                    PHtext={dataService.PName}
+                    PHnumber={dataService.PBudget}
+                    buttonName="Concluir edição"
+                />
+            </section>
+
+
+
 
             <article className="handleServiceArea">
                 
-                <section>
+                <section id='projectData'>
                     <p><strong>Categoria</strong>: {dataService.PCategory}</p>
                     <p><strong>Total do orçamento</strong>:{dataService.PBudget}</p>
                     <p><strong>Total utilizado</strong>: R$0</p>
@@ -60,34 +165,39 @@ export default function Services(){
                 <section className="addServices">
                    <div className="addServiceHeader">
                         <h1>Adicione um serviço:</h1>
-                        <Button nomeBotao={buttonService} handleFunc={editProj}/>
+                        <Button nomeBotao={buttonService} handleFunc={addService}/>
                         
                    </div>
 
-                    <form /*onSubmit={cadUser}*/ > 
 
-                        <label htmlFor="PName">Nome do serviço:</label>
+                    <form onSubmit={cadService}> 
+
+                        <label htmlFor="SName">Nome do serviço:</label>
                         <input
                             type="text" 
-                            id='PName' 
-                            placeholder='Digite o nome do projeto' 
+                            id='SName' 
+                            placeholder='Digite o nome do projeto'
+                            onChange={(e)=>handleFormServices(e)}
                             required
                         />
                     
                         <label htmlFor="PBudget">Custo do serviço:</label>
                         <input 
                             type="number" 
-                            id='PBudget'  
+                            id='SBudget'  
                             placeholder='Digite o orçamento total' 
+                            onChange={(e)=>handleFormServices(e)}
                             required
                         />
                     
-                        <label htmlFor="PCategory">Descrição do projeto:</label>
+                        <label htmlFor="SCategory">Descrição do projeto:</label>
                         <input 
                             type="text" 
                             name="" 
                             id="" 
                             placeholder="Descreva o serviço"
+                            onChange={(e)=>handleFormServices(e)}
+                            
                         />
                     
                             
@@ -100,7 +210,10 @@ export default function Services(){
 
                 <section className="listServices">
                     <h1>Serviços:</h1>
-                    <p>Não há serviços cadastrados</p>
+
+                    <BoxProjects title="Teste de título de projeto"  budget="1000"/>
+                
+                    
                 </section>
 
 

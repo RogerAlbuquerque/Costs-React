@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
+import Form from '../../../extraComponents/Forms/forms'
 import Button from '../../../extraComponents/Buttons'
 import './NewProject.css'
 
@@ -12,6 +13,10 @@ export default function NewProject(){
 
     function cadUser(x){
         x.preventDefault()
+
+        newProject.cost = 0
+        newProject.services = []
+
         fetch('http://localhost:5000/projetos',{
             method: "POST",                	
             body: JSON.stringify(newProject),			
@@ -39,8 +44,6 @@ export default function NewProject(){
             setnewProject({ ...newProject, [x.target.id]: x.target.value}) 
     }
        
-
-    const [formData, setFormData] = useState([])
     const [newProject, setnewProject] = useState()
 
     return(
@@ -49,40 +52,16 @@ export default function NewProject(){
                 <h1>Criar projeto</h1>
                 <p>Crie seus projetos para depois adicionar os serviços</p>
 
-                <form onSubmit={cadUser}>
-
-                    <label htmlFor="PName">Nome do projeto:</label>
-                    <input
-                        type="text" 
-                        id='PName' 
-                        placeholder='Digite o nome do projeto' 
-                        onChange={(e)=>handleForm(e)}
-                        required
-                    />
                 
-                    <label htmlFor="PBudget">Orçamento do projeto:</label>
-                    <input 
-                        type="number" 
-                        id='PBudget'  
-                        placeholder='Digite o orçamento total' 
-                        onChange={(e)=>handleForm(e)}
-                        required
-                    />
-                
-                    <label htmlFor="PCategory">Selecione a categoría:</label>
+        
 
-                    <select id="PCategory" onChange={(e) => handleForm(e)} required >
-                        <option value="">                   Selecione uma opção </option>
-                        <option value="infra">              Infra               </option>
-                        <option value="desenvolvimento">    Desenvolvimento     </option>
-                        <option value="designe">            Designe             </option>
-                        <option value="planejamento">       planejamento        </option>
-                    </select>
-                           
-                    <Button nomeBotao="Criar Projeto"/>                               
-
-                </form>
-               
+               <Form 
+                handleFormFunc={handleForm} 
+                submitFunc={cadUser} 
+                PHtext="Digite o nome do projeto"
+                PHnumber={"Digite o orçamento total"}
+                buttonName="Criar Projeto"
+               />
 
             </section>
             

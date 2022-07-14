@@ -1,51 +1,56 @@
 {
   "projetos": [
     {
-      "PName": "Contratar dev Frontend",
-      "PBudget": "6000",
+      "PName": "Novo time de frontend",
+      "PBudget": "50000",
       "PCategory": "desenvolvimento",
-      "id": 1
-    },
-    {
-      "PName": "Contratar Scrum Master",
-      "PBudget": "5400",
-      "PCategory": "infra",
+      "cost": 0,
+      "services": [
+        {
+          "SName": "Novo serviço ",
+          "SBudget": "1000",
+          "": "Descrição de um dos serviços para completar o projeto"
+        }
+      ],
       "id": 2
     },
     {
-      "PName": "Gerente sor. de devs",
-      "PBudget": "15000",
+      "PName": "Contratar gerente Senior para devs",
+      "PBudget": "40000",
       "PCategory": "planejamento",
+      "cost": 0,
+      "services": [
+        {
+          "SName": "Serviço teste",
+          "SBudget": "1000",
+          "": "Serviço de teste"
+        }
+      ],
       "id": 3
     },
     {
-      "PName": "EquipeUX designe",
-      "PBudget": "5000",
-      "PCategory": "designe",
+      "PName": "Atualizar o hardware do banco de dados",
+      "PBudget": "100000",
+      "PCategory": "infra",
+      "cost": 0,
+      "services": [],
       "id": 4
     },
     {
-      "PName": "Projeto de teste",
-      "PBudget": "1000000",
-      "PCategory": "planejamento",
+      "PName": "Projeto teste",
+      "PBudget": "10000",
+      "PCategory": "designe",
+      "cost": 0,
+      "services": [],
       "id": 5
     },
     {
-      "PName": "Mais um projeto só para testar",
-      "PBudget": "20000000",
-      "PCategory": "infra",
+      "PName": "Contratar Scrum Master",
+      "PBudget": "8000",
+      "PCategory": "planejamento",
+      "cost": 0,
+      "services": [],
       "id": 6
     }
-  ],
-
-  "services":[
-    
   ]
-
-  
-
-
-
-
-
 }

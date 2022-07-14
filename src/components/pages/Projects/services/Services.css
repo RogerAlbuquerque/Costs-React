@@ -44,9 +44,15 @@
 .services form{
     display: none;
     padding-top: 1rem;
+    width: 100%;
+}
+
+.EditForm  {
+    width: 100%;
+    padding-bottom: 1rem;
 }
 .services form button{
-    width: 15%;
+    width: 180px;
 }
 .listServices{
     /* sadfasdfasd */
