@@ -35,14 +35,12 @@ export default function Projects(){
                     <BoxProjects 
                         title={dados.PName} 
                         budget={dados.PBudget} 
+                        textBudget="Orçamento"
                         category={dados.PCategory}                        
                         id={dados.id}
                         key={dados.PName}
                     /> 
                 )}
-
-
-
                  
                    
         </article>

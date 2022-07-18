@@ -7,9 +7,14 @@
       "cost": 0,
       "services": [
         {
-          "SName": "Novo serviço ",
+          "SName": "teste 1",
           "SBudget": "1000",
-          "": "Descrição de um dos serviços para completar o projeto"
+          "SDescricao": "Descrição do projeto aqui"
+        },
+        {
+          "SName": "Teste 2",
+          "SBudget": "2000",
+          "SDescricao": "Descrição do projeto aqui"
         }
       ],
       "id": 2
@@ -51,6 +56,16 @@
       "cost": 0,
       "services": [],
       "id": 6
+    },
+    {
+      "PName": "Novo teste",
+      "PBudget": "4000",
+      "PCategory": "desenvolvimento",
+      "cost": 0,
+      "services": [
+        
+      ],
+      "id": 7
     }
   ]
 }

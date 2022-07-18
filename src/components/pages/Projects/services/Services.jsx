@@ -57,6 +57,18 @@ export default function Services(){
 
     function cadService (x){
         x.preventDefault(x)
+
+
+        if((dataService.cost < dataService.PBudget) || (dataService.cost + parseFloat(serviceForm.SBudget)) < dataService.PBudget ){
+            dataService.cost += parseFloat(serviceForm.SBudget)
+        } 
+        else {
+            alert("O VALOR ULTRAPASSOU O ORÇAMENTO DELIMITADO")
+        }
+
+
+        
+        
         
         dataService.services.push(serviceForm)
         
@@ -82,7 +94,7 @@ export default function Services(){
     }
 
     function updateProjectData(x){
-        x.preventDefault(x)
+        x.preventDefault(x)        
 
          fetch(`http://localhost:5000/projetos/${id}`,{
             method: "PATCH",                	
@@ -129,6 +141,22 @@ export default function Services(){
     const [editForm, setEditForm] = useState ()
     
 
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
     return(
     
         <article className="services">
@@ -157,7 +185,7 @@ export default function Services(){
                 <section id='projectData'>
                     <p><strong>Categoria</strong>: {dataService.PCategory}</p>
                     <p><strong>Total do orçamento</strong>:{dataService.PBudget}</p>
-                    <p><strong>Total utilizado</strong>: R$0</p>
+                    <p><strong>Total utilizado</strong>: R${dataService.cost}</p>
                 </section>
 
                 
@@ -193,8 +221,8 @@ export default function Services(){
                         <label htmlFor="SCategory">Descrição do projeto:</label>
                         <input 
                             type="text" 
-                            name="" 
-                            id="" 
+                            name="SDescricao" 
+                            id="SDescricao" 
                             placeholder="Descreva o serviço"
                             onChange={(e)=>handleFormServices(e)}
                             
@@ -208,14 +236,40 @@ export default function Services(){
 
                 
 
-                <section className="listServices">
-                    <h1>Serviços:</h1>
+                <section>
+                   
+                    <div className='titulo'> 
+                        <h1>Serviços:</h1>
+                    </div>                 
+               
+                
+                
+                    <div className="listServices"> 
+                        <h1></h1>
+                        {dataService.services && dataService.services.map((dados)=>                   
+                            <BoxProjects 
+                                title={dados.SName} 
+                                budget={dados.SBudget} 
+                                textBudget="Valor total"
+                                descricao = {dados.SDescricao}
+                                key={dados.SName}
+                            />
+                        )}
+                    </div>
+                
+                
+               
 
-                    <BoxProjects title="Teste de título de projeto"  budget="1000"/>
+                       
+
+
+
+
                 
                     
                 </section>
 
+        
 
             </article>
             
