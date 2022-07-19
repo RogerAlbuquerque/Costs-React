@@ -55,9 +55,15 @@ export default function Services(){
     
 
 
+
+function mostrar (){
+    console.log(serviceForm)
+}
+
+
+
     function cadService (x){
         x.preventDefault(x)
-
 
         if((dataService.cost < dataService.PBudget) || (dataService.cost + parseFloat(serviceForm.SBudget)) < dataService.PBudget ){
             dataService.cost += parseFloat(serviceForm.SBudget)
@@ -272,7 +278,7 @@ export default function Services(){
         
 
             </article>
-            
+            <button onClick={mostrar}>MOSTRAR</button>
         </article>
     )
 }
