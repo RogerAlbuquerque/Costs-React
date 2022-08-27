@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// "https://RogerAlbuquerque.github.io/Costs-React/"
 export default defineConfig({
   plugins: [react()]
 })
