@@ -56,9 +56,7 @@ export default function Services(){
 
 
 
-function mostrar (){
-    console.log(serviceForm)
-}
+
 
 
 
@@ -278,7 +276,7 @@ function mostrar (){
         
 
             </article>
-            <button onClick={mostrar}>MOSTRAR</button>
+           
         </article>
     )
 }
