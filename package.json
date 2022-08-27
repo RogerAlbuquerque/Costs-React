@@ -1,6 +1,7 @@
 {
   "name": "cost",
   "private": true,
+  "homepage":"cost",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
