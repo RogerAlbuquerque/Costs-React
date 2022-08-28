@@ -1,7 +1,7 @@
 {
   "name": "cost",
   "private": true,
-  "homepage":"/Costs-React",
+  "homepage":"/Costs-React/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
