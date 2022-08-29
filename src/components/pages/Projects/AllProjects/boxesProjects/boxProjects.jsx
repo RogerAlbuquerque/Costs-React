@@ -5,13 +5,14 @@ import './boxesProjects.css'
 export default function boxProjects({title, budget,textBudget, category, id,descricao}){
     
     function delProject(){
-        fetch(`http://localhost:5000/projetos/${id}`, {
-            method:'DELETE',
-            headers:{
-                'Content-Type':'application/json'}
-        })
-        .then(response => alert("Projeto deletado"), location.reload())        
-        .catch(error => console.error("Deu um erro por causa disso aqui: " + error))
+        // fetch(`http://localhost:5000/projetos/${id}`, {
+        //     method:'DELETE',
+        //     headers:{
+        //         'Content-Type':'application/json'}
+        // })
+        // .then(response => alert("Projeto deletado"), location.reload())        
+        // .catch(error => console.error("Deu um erro por causa disso aqui: " + error))
+        alert("Projeto Deletado")
     }
 
    
