@@ -6,10 +6,10 @@ export default function Nav(){
         <nav>
            <img src={Logo} alt="Logo do costs" />
             <ul>
-                <li><Link to="/Costs-React/">         Home      </Link></li>
+                <li><Link to="/Costs-React">         Home      </Link></li>
                 <li><Link to="/projects"> Projetos  </Link></li>
                 <li><Link to="/company">  Empresa   </Link></li>
-                <li><Link to="/contact"> Contato   </Link></li>
+                <li><Link to="/contact"> Sobre   </Link></li>
             </ul>
         </nav>
     )

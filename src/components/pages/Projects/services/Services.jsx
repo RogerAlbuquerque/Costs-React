@@ -164,10 +164,20 @@ export default function Services(){
     return(
     
         <article className="services">
-            <section className="headerServices">
+             {/*########### PARTE DO PROJETO CASO A API ESTEJA FUNCIONANDO ################ */}
+            {/* <section className="headerServices">
                 <h1>{dataService.PName}</h1>
                 <Button nomeBotao={editProj} handleFunc={buttonEditForm}/>
+            </section> */}
+
+
+<section className="headerServices">
+                <h1>Titulo do projeto</h1>
+                <Button nomeBotao={editProj} handleFunc={buttonEditForm}/>
             </section>
+
+
+
 
             
             
@@ -185,12 +195,28 @@ export default function Services(){
 
 
             <article className="handleServiceArea">
-                
-                <section id='projectData'>
+                {/*########### PARTE DO PROJETO CASO A API ESTEJA FUNCIONANDO ################ */}
+                {/* <section id='projectData'>
                     <p><strong>Categoria</strong>: {dataService.PCategory}</p>
                     <p><strong>Total do orçamento</strong>:{dataService.PBudget}</p>
                     <p><strong>Total utilizado</strong>: R${dataService.cost}</p>
-                </section>
+                </section> */}
+
+                   
+                   
+                    {/*########### PARTE DO PROJETO CASO A API ESTEJA FUNCIONANDO ################ */}
+                    {/* <section id='projectData'>
+                    <p><strong>Categoria</strong>: {dataService.PCategory}</p>
+                    <p><strong>Total do orçamento</strong>:{dataService.PBudget}</p>
+                    <p><strong>Total utilizado</strong>: R${dataService.cost}</p> 
+                    </section>       */}
+
+
+                    <section id='projectData'>
+                    <p><strong>Categoria</strong>:Infraestrutura</p>
+                    <p><strong>Total do orçamento</strong>:20000</p>
+                    <p><strong>Total utilizado</strong>: R$200</p> 
+                    </section>  
 
                 
 
@@ -250,7 +276,8 @@ export default function Services(){
                 
                     <div className="listServices"> 
                         <h1></h1>
-                        {dataService.services && dataService.services.map((dados)=>                   
+     {/*########### PARTE DO PROJETO CASO A API ESTEJA FUNCIONANDO ################ */}
+                        {/* {dataService.services && dataService.services.map((dados)=>                   
                             <BoxProjects 
                                 title={dados.SName} 
                                 budget={dados.SBudget} 
@@ -258,7 +285,25 @@ export default function Services(){
                                 descricao = {dados.SDescricao}
                                 key={dados.SName}
                             />
-                        )}
+                        )} */}
+
+                            <BoxProjects 
+                                title="Titulo do Serviço"
+                                budget="R$ 200"
+                                textBudget="Valor total"
+                                descricao = "Parte que descreve qual o serviço e o que fazer"
+                                key="key"
+                            />
+
+                            <BoxProjects 
+                                title="Titulo do Serviço"
+                                budget="R$ 200"
+                                textBudget="Valor total"
+                                descricao = "Parte que descreve qual o serviço e o que fazer"
+                                key="key"
+                            />
+
+
                     </div>
                 
                 

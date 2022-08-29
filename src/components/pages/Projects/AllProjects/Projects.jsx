@@ -41,6 +41,49 @@ export default function Projects(){
                         key={dados.PName}
                     /> 
                 )}
+
+                    <BoxProjects 
+                        title="Projeto 1" 
+                        budget="1000" 
+                        textBudget="Orçamento"
+                        category="infra"  
+                        id="1"                     
+                       
+                    /> 
+                     <BoxProjects 
+                        title="Projeto 2" 
+                        budget="2000" 
+                        textBudget="Orçamento"
+                        category="desenvolvimento"  
+                        id="2"                       
+                       
+                    /> 
+                     <BoxProjects 
+                        title="Projeto 3" 
+                        budget="3000" 
+                        textBudget="Orçamento"
+                        category="designe"   
+                        id="3"                       
+                       
+                    /> 
+                     <BoxProjects 
+                        title="Projeto 4" 
+                        budget="4000" 
+                        textBudget="Orçamento"
+                        category="planejamento" 
+                        id="4"                         
+                       
+                    /> 
+                     <BoxProjects 
+                        title="Projeto 5" 
+                        budget="5000" 
+                        textBudget="Orçamento"
+                        category="infra"
+                        id="5"                        
+                       
+                    /> 
+
+                   
                  
                    
         </article>
