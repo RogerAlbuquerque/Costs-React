@@ -1,0 +1,481 @@
+[33mcommit 573191e6aa49d0a78474516bc436a18ce75c1e9a[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Fri Sep 23 16:24:37 2022 -0300
+
+    links para contato
+
+[33mcommit e2031c6710f339a40b1e68bc0c78cc3cc8b1c555[m[33m ([m[1;32mmain[m[33m)[m
+Merge: 6782be3 e8cf4b4
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Fri Sep 23 16:19:50 2022 -0300
+
+    Merge branch 'main' of github.com:RogerAlbuquerque/Costs-React
+
+[33mcommit 6782be3f985d577d11299e563f95029edc67f480[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Fri Sep 23 16:17:14 2022 -0300
+
+    Adicionado links para contato na pagina sobre
+
+[33mcommit 349f94e11d80694bd165f8334586dcd41b0e0438[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Fri Sep 23 16:14:59 2022 -0300
+
+    ADICIONANDO LLINKS PAARA CONTATOS NA PAGINA SOBRE
+
+[33mcommit e8cf4b493d14ce60a798e9b077d14150fc1bd89d[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Fri Sep 23 10:27:13 2022 -0300
+
+    Update README.md
+
+[33mcommit 7f8f8d303056974d9ef0b12fda13fce88f309e4f[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Fri Sep 23 10:26:17 2022 -0300
+
+    Update README.md
+
+[33mcommit 51756c3e09b6ad81c4bcfa19ac10198270d4f629[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Tue Aug 30 09:03:54 2022 -0300
+
+    Criado o Readme para explicar a ideia e o atual estado do projeto.
+
+[33mcommit bfa3a42908d439e236ec9aadbe6da6fcf346feef[m[33m ([m[1;31morigin/gh-pages[m[33m)[m
+Author: RogerAlbuquerque <RogerAlbuquerque@users.noreply.github.com>
+Date:   Mon Aug 29 17:08:25 2022 +0000
+
+    deploy: 06c37caf128491263e19c6476cb6f19d3d6e7db8
+
+[33mcommit 06c37caf128491263e19c6476cb6f19d3d6e7db8[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 14:05:28 2022 -0300
+
+    Mudado a função de deletar enquanto não tem backend
+
+[33mcommit 0a11be24d311f70c313c05bdeb1bf99dafb7d53c[m
+Author: RogerAlbuquerque <RogerAlbuquerque@users.noreply.github.com>
+Date:   Mon Aug 29 16:55:44 2022 +0000
+
+    deploy: c6e40bda8e09911b35ebfeae8b9bd5a352e3c096
+
+[33mcommit c6e40bda8e09911b35ebfeae8b9bd5a352e3c096[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 13:54:38 2022 -0300
+
+    Mudado o link para o github
+
+[33mcommit 18a05513bbeaca57f16a77b75b2a0361ea5fa239[m
+Author: RogerAlbuquerque <RogerAlbuquerque@users.noreply.github.com>
+Date:   Mon Aug 29 16:48:12 2022 +0000
+
+    deploy: c99abc2ad73de53d902b5f681c957f2645b5b86b
+
+[33mcommit c99abc2ad73de53d902b5f681c957f2645b5b86b[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 13:46:56 2022 -0300
+
+    alterações em navegação e na página contato
+
+[33mcommit d730176f3b39af722539d0c6880c0eadbdc3f94d[m
+Author: RogerAlbuquerque <RogerAlbuquerque@users.noreply.github.com>
+Date:   Mon Aug 29 14:58:09 2022 +0000
+
+    deploy: c2ac6967cf86c74993da3caddf4e39371e0236f8
+
+[33mcommit c2ac6967cf86c74993da3caddf4e39371e0236f8[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 11:56:58 2022 -0300
+
+    Mudando a pagina home
+
+[33mcommit 7df38df31d42211a8dec8e8d09ba0bd272aa6821[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 11:45:47 2022 -0300
+
+    mudando a homepage do package.json
+
+[33mcommit d06a3e9270c2a569b0dd5cb7e0ccad33804b019d[m
+Author: RogerAlbuquerque <RogerAlbuquerque@users.noreply.github.com>
+Date:   Mon Aug 29 14:34:44 2022 +0000
+
+    deploy: b08f56694704b4afb424e66451aa8caecaff7ce8
+
+[33mcommit b08f56694704b4afb424e66451aa8caecaff7ce8[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 11:33:14 2022 -0300
+
+    alterando as configurações do vite.config
+
+[33mcommit 70f42c1b2d5a8c6223a6ef580dc913d666358a87[m
+Author: RogerAlbuquerque <RogerAlbuquerque@users.noreply.github.com>
+Date:   Mon Aug 29 14:25:30 2022 +0000
+
+    deploy: 6867c1faa3c4a9b5fd2db94f5ee4ad72948ed4f1
+
+[33mcommit 6867c1faa3c4a9b5fd2db94f5ee4ad72948ed4f1[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 11:24:34 2022 -0300
+
+    add deploy workflow
+
+[33mcommit 9a387c4c10bebdfd82d9b0145d178ae82e4bbed6[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 11:20:23 2022 -0300
+
+    apagado os arquivos para o deploy
+
+[33mcommit db9250c2d357b8a6fda62afeabbd1444675d7642[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 11:15:02 2022 -0300
+
+    Criado arquivos do workflow para fazer o deploy do projeto
+
+[33mcommit 43b9b658718fefcd40919631553eaad705503928[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Aug 29 10:57:08 2022 -0300
+
+    Deletado deploy.sh e dist
+
+[33mcommit 78f72a326b76169e740c023441c0db01c7279492[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 23:08:42 2022 -0300
+
+    ASASASASASASASASASA
+
+[33mcommit 0f1cbd202a881aca03c53156b2ef6b7ab22b734e[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 23:03:11 2022 -0300
+
+    asdadzxcvvzvzc
+
+[33mcommit c94f217a6eacaa67ae0b22a8d1ca57b022b3fa79[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 23:00:10 2022 -0300
+
+    asdfafadfasdfadfasdasdfasdf
+
+[33mcommit 7fd853fd41849096451f6859e87707dc21d66a3c[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 22:58:43 2022 -0300
+
+    ssssssssssssssssssssssssssssssssssssssssssssssssssssss
+
+[33mcommit 6445692aef102ef1035148f277d8ea6158d239c0[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 22:46:14 2022 -0300
+
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[33mcommit bfe2f55e2ecfdc575d2e8729fb9374dbebb93773[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 22:42:09 2022 -0300
+
+    sdgsdfhshsfg
+
+[33mcommit ac84ea33207ae9197626fc6d6740e6923112f921[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 22:37:03 2022 -0300
+
+    ttttttttttttt
+
+[33mcommit d04017a17003aea385b19d4d308c9a016887f593[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Sat Aug 27 22:07:28 2022 -0300
+
+    Update vite.config.js
+
+[33mcommit 8e05999abdbb41b4d51cba27390c0d6da7ab0381[m
+Merge: 5fd18a2 e83ebae
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 21:54:11 2022 -0300
+
+    Merge branch 'main' of github.com:RogerAlbuquerque/Costs-React
+
+[33mcommit c0a7c9c2da5df892d61729f8eda7257f6cf2eff9[m[33m ([m[1;31morigin/pagina-principal[m[33m)[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 21:51:52 2022 -0300
+
+    tttttttt
+
+[33mcommit 5fd18a2e94b84a9c6f489994278ba6317a27e6f9[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 21:51:52 2022 -0300
+
+    tttttttt
+
+[33mcommit e83ebae4309017919c39d43590a2aafcd84e23e2[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Sat Aug 27 21:35:33 2022 -0300
+
+    Delete dist directory
+
+[33mcommit 52a338c8f51a2a5fa7c887c3fb2051d4e349fe0b[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 21:03:57 2022 -0300
+
+    a mesma coisa do ultimo
+
+[33mcommit e5d4f54f0d5bbc3eba0406b329cc15cf0a3ef8e9[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 20:58:53 2022 -0300
+
+    voltando a base do vite.config ao de antes
+
+[33mcommit 9f100bfff46a0e527c8afb1769bae71d55bca4cd[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 20:58:53 2022 -0300
+
+    voltando a base do vite.config ao de antes
+
+[33mcommit 966134ed3d7813557e1bfd90cad028e26b816f8c[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 20:34:27 2022 -0300
+
+    modificando o build
+
+[33mcommit f9f6d2fc63a01ff3e66e304706be7e8e64296a88[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 20:34:27 2022 -0300
+
+    modificando o build
+
+[33mcommit 792855641896d1ba8224fe76211686180d299506[m
+Merge: f692c25 965c301
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 20:32:55 2022 -0300
+
+    Merge branch 'main' of github.com:RogerAlbuquerque/Costs-React
+
+[33mcommit f692c25186900d521429c4cf2fc907684b8fe2a9[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 20:32:26 2022 -0300
+
+    alterando o valor base do arquivo vite.config
+
+[33mcommit 965c301f5a0a7a24617a68ce062f9d285b001b7a[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Sat Aug 27 18:02:30 2022 -0300
+
+    Update index.html
+
+[33mcommit cde21e0c50b67f34e2c957558f27c49f96b86371[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Sat Aug 27 18:02:16 2022 -0300
+
+    Update index.html
+
+[33mcommit 0287f169e6d7153f930f4ebd94e9495190e73139[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 17:51:11 2022 -0300
+
+    teste de novo
+
+[33mcommit 1722c54230a7c51796f09aa7b5b29a4094e23d8a[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 17:42:06 2022 -0300
+
+    teste
+
+[33mcommit 7a3b5186d0ded7eb5ba67abb56c1ea317cfdb2d3[m
+Merge: 7a1344d 58ff005
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 17:32:33 2022 -0300
+
+    Merge branches 'main' and 'main' of github.com:RogerAlbuquerque/Costs-React
+
+[33mcommit 62adfe3629f38d8b9b52ce39a596806397cc7c0e[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 17:32:03 2022 -0300
+
+    Agora vai, não é possível
+
+[33mcommit 7a1344d43cb9a13504766dc463b56993501d1e0b[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 17:32:03 2022 -0300
+
+    Agora vai, não é possível
+
+[33mcommit 58ff005a84f98fc41d1220066b936a39aaa4c2fe[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Sat Aug 27 17:23:34 2022 -0300
+
+    Update index.html
+
+[33mcommit 63db532b32028ef8b56d40cb282359597ccac3f7[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 17:15:45 2022 -0300
+
+    ultimos arquivos para o deploy no github pages
+
+[33mcommit f43712d44a9e678d378af85fbc43366e6b8064d4[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 17:08:39 2022 -0300
+
+    tentando deploy de novo
+
+[33mcommit feb5f2911d62b7637157d077902447a7ff75a7d4[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Sat Aug 27 16:59:22 2022 -0300
+
+    deletando o workflow
+
+[33mcommit 10b2379b9069c51eb3a0bcf6eb70d14c01b7e634[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 16:58:05 2022 -0300
+
+    upando o arquivo dist para fazer deploy do projeto no github pages
+
+[33mcommit 05495575547ab9d1319e2518b1ac59e12ccff31c[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 16:58:05 2022 -0300
+
+    upando o arquivo dist para fazer deploy do projeto no github pages
+
+[33mcommit 2756f5312a842b69faf4dcd7c78998d5d6bc8ee3[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 13:26:36 2022 -0300
+
+    mudado onome da pasta da homepage
+
+[33mcommit accca80d0d7e6fad44c4cbf7fe444d4e9d103301[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 13:22:12 2022 -0300
+
+    mudando a homepage
+
+[33mcommit 11cfa6f1779fb123fe81029382166db9e7742b02[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 13:16:24 2022 -0300
+
+    mudando o nome da branch no workflow
+
+[33mcommit 38e1b81a89c90b2deb97ae88cc31b4fb680f1109[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 13:15:06 2022 -0300
+
+    de novo o workflow
+
+[33mcommit 07680a84ee7d42e9479bb77b2e4b2868fc984434[m
+Merge: 915cfd0 82c052c
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 13:14:23 2022 -0300
+
+    Merge branch 'main' of github.com:RogerAlbuquerque/Costs-React
+
+[33mcommit 915cfd0587e2123827cf42abd352d74355f77917[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 13:13:54 2022 -0300
+
+    comitando denovo os arquivos para o workflow
+
+[33mcommit 82c052cf763df22e40582b9e1ebfec933c80d5ee[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Sat Aug 27 13:12:45 2022 -0300
+
+    Update build.yml
+
+[33mcommit 98f05b8d842be0c3a5830215bf521977ce1d4bff[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 13:10:14 2022 -0300
+
+    postando arquivos para postar o projeto no pages
+
+[33mcommit b3b3d09bc8a42e011afce9b711e43eee341291a1[m
+Merge: f00e497 89dd93b
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 13:05:11 2022 -0300
+
+    Merge branch 'main' of github.com:RogerAlbuquerque/Costs-React
+
+[33mcommit f00e497c8e19903c264960bc5c0f35bc7d3b02da[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Aug 27 13:02:59 2022 -0300
+
+    adicinando mudanças no db
+
+[33mcommit 89dd93b7636a8800059ed04c74a23d05430c6bc0[m
+Author: Roger Albuquerque <82909603+RogerAlbuquerque@users.noreply.github.com>
+Date:   Sat Aug 27 12:58:04 2022 -0300
+
+    Create build.yml
+    
+    Adicionando arquvios para poder fazer o deploy do projeto em react
+
+[33mcommit f82726996a1147047784ae1cc7d0631594059016[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Tue Jul 19 09:46:32 2022 -0300
+
+    Area de serviços configurado e preço dos projetos, FINALIZADO PROJETO
+
+[33mcommit 0a46306cbd39c6ee38aba8b6e7d169a051e80e95[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Jul 18 14:29:44 2022 -0300
+
+    Área de serviços configurada,  fatal configurar só a regra de orçamento
+
+[33mcommit 1ef16d45adf4aa1edc106e2893facca0122b02f2[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Thu Jul 14 19:42:04 2022 -0300
+
+    Foi adicionado a página de edição de serviços e o local d função para edição de serviços
+
+[33mcommit bda761d213a76b2c330625fa40d200d1844791a7[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Thu Jul 14 11:52:33 2022 -0300
+
+    configurado a interatividade da pasta de services e implementado o backend, agora falta o submit do form
+
+[33mcommit 0db11490a69080d2ad7a5e2c493d78f4a14e35ac[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Tue Jul 12 11:43:28 2022 -0300
+
+    configurado dinamicamnte a cor das bolinhas no nome dos projetos e criado a pagina de edição de projetos
+
+[33mcommit 00eeabcd63dd6fb2c8a87e27e8e1605639ea1ec2[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Jul 11 18:16:00 2022 -0300
+
+    Terminado a configuração de todo o dashbord de projetos
+
+[33mcommit 629fcbeac0ec0a9b46e074a4207c1d78ddb8832f[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Jul 11 11:49:43 2022 -0300
+
+    API incorporada na página de todos os projetos
+
+[33mcommit 05e7bd2fc4e49fd72ed56cfd935dc2c9df927485[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Jul 11 11:43:39 2022 -0300
+
+    Transformado o 'boxPRojects' em componente
+
+[33mcommit af028b97c0433dbeeca6666c6fb30e8ae612933a[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Mon Jul 11 11:24:21 2022 -0300
+
+    Configurado a página que mostra todos os projetos, agora precisa linkar com a API
+
+[33mcommit 233f41b091f77bd2b2075f120605b5cf2d76fdb7[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sun Jul 10 08:49:53 2022 -0300
+
+    Feito o link entra a aplicação frontend e o banco de dados
+
+[33mcommit 44e94a7de20d9ffa506bb8be521591ba9b0381c9[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Sat Jul 9 11:44:37 2022 -0300
+
+    Formatado o formulário para criação de projetos e instalado o pacote JsonServer
+
+[33mcommit d37b900ce13688f02bd6ceba855ae547ed2ce04e[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Fri Jul 8 18:39:34 2022 -0300
+
+    Criado e iniciado as configurações da pagina de projetos
+
+[33mcommit 508f2b01686f102ae293a2dcf0ba3ed70bb5ea60[m
+Author: Roger Albuquerque <rogeralbuquerque98@protonmail.com>
+Date:   Fri Jul 8 13:41:42 2022 -0300
+
+    primeiro commit do projeto COST
