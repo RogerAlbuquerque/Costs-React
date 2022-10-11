@@ -16,22 +16,27 @@ export default function NewProject(){
         newProject.cost = 0
         newProject.services = []
 
-        fetch('http://localhost:5000/projetos',{
-            method: "POST",                	
-            body: JSON.stringify(newProject),			
-            headers:{
-                "content-type": "application/json; charset=UTF-8" 
-            },
+        // ######### APÓS IMPLEMENTAR O BACKEND É SÓ DESCOMENTAR ESSA PARTE PARA RODAR NORMAL ##############
+
+        // fetch('http://localhost:5000/projetos',{
+        //     method: "POST",                	
+        //     body: JSON.stringify(newProject),			
+        //     headers:{
+        //         "content-type": "application/json; charset=UTF-8" 
+        //     },
             
-        })             
-        .then(res => res.json())
-        .then((r=> {
-            alert("Projeto postado com sucesso")
-            navigate("/projects")
+        // })             
+        // .then(res => res.json())
+        // .then((r=> {
+        //     alert("Projeto postado com sucesso")
+        //     navigate("/Costs-React/projects")
 
             
-        }))
-        .catch(error=> console.log("Deu erro em algum lugar --" + error))
+        // }))
+        // .catch(error=> console.log("Deu erro em algum lugar --" + error))
+
+        alert("Projeto postado com sucesso")
+            navigate("/Costs-React/projects")
 
         console.log(newProject)
 

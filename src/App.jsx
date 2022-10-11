@@ -18,12 +18,12 @@ function App() {
     <Container>
       <Routes>
 
-          <Route exact path="/Costs-React"    element={<Home       />} />
-          <Route       path="/projects"       element={<Projects   />} />
-          <Route       path="/company"        element={<Company    />} />
-          <Route       path="/contact"        element={<Contact    />} /> 
-          <Route       path="/newproject"     element={<NewProject />} /> 
-          <Route       path="projects/:id"    element={<Services   />} />   
+          <Route      exact path="/Costs-React"    element={<Home       />} />
+          <Route       path="/Costs-React/projects"       element={<Projects   />} />
+          <Route       path="/Costs-React/company"        element={<Company    />} />
+          <Route       path="/Costs-React/contact"        element={<Contact    />} /> 
+          <Route       path="/Costs-React/newproject"     element={<NewProject />} /> 
+          <Route       path="/Costs-React/projects/:id"    element={<Services   />} />   
           
       </Routes>
 

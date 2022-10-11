@@ -8,7 +8,7 @@ export default function Home(){
         <article className='home'>
         <h1>Bem vindo ao <span>Costs</span></h1>
          <p>Comece a gerenciar seus projetos agora mesmo</p>
-        <Link to="/newproject"> <Button nomeBotao="Criar projeto"/> </Link>
+        <Link to="/Costs-React/newproject"> <Button nomeBotao="Criar projeto"/> </Link>
          <img src={ImgHome} className="imgHome" alt="" />
         </article>
     )

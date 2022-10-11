@@ -7,9 +7,9 @@ export default function Nav(){
            <img src={Logo} alt="Logo do costs" />
             <ul>
                 <li><Link to="/Costs-React">         Home      </Link></li>
-                <li><Link to="/projects"> Projetos  </Link></li>
-                <li><Link to="/company">  Empresa   </Link></li>
-                <li><Link to="/contact"> Sobre   </Link></li>
+                <li><Link to="Costs-React/projects"> Projetos  </Link></li>
+                <li><Link to="Costs-React/company">  Empresa   </Link></li>
+                <li><Link to="Costs-React/contact"> Sobre   </Link></li>
             </ul>
         </nav>
     )

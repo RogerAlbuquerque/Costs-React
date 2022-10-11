@@ -29,7 +29,7 @@ export default function Projects(){
         <article className='allProjects'>
             <section className='headerallProjects'>
                 <h1>Meus Projetos:</h1>
-                <Link to="/newproject"> <Button nomeBotao="Criar projeto"/> </Link>
+                <Link to="/Costs-React/newproject"> <Button nomeBotao="Criar projeto"/> </Link>
             </section>
                 {apiData.length > 0 && apiData.map((dados)=>   
                     <BoxProjects 

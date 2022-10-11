@@ -26,8 +26,15 @@ export default function boxProjects({title, budget,textBudget, category, id,desc
                     
                 </div>
                 <div className='divButtons'>
-                    <Link to={`/projects/${id}`}><button><FaRegEdit     />Editar</button></Link>                    
-                    <button onClick={delProject}><FaRegTrashAlt />Excluir</button>
+                    <Link to={`/Costs-React/projects/${id}`}>
+                        <button>
+                            <FaRegEdit/>Editar
+                        </button>
+                    </Link> 
+
+                    <button onClick={delProject}>
+                        <FaRegTrashAlt />Excluir
+                    </button>
                 </div>
 
              
