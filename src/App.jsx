@@ -18,7 +18,7 @@ function App() {
     <Container>
       <Routes>
 
-          <Route      exact path="/Costs-React"    element={<Home       />} />
+          <Route exact path="/Costs-React"    element={<Home       />} />
           <Route       path="/Costs-React/projects"       element={<Projects   />} />
           <Route       path="/Costs-React/company"        element={<Company    />} />
           <Route       path="/Costs-React/contact"        element={<Contact    />} /> 
