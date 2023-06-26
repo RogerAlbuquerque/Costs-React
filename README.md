@@ -1,18 +1,18 @@
 # Costs-React
 
-## Como iniciar o projeto:
+## How to start the project:
 
-1. Primeiro é precisar abrir o terminal dentro do projeto e digitar o comando "npm install" para instalar todas as dependências.
+1. First you need to open the terminal inside the project and type the command "npm install" to install all the dependencies.
 
-2. Depois para iniciar o projeto em sí é preciso rodar o backend com o comando "npm run backend", e depois o frontend com o comando "npm run dev".
+2. Then, to start the project itself, you need to run the backend with the "npm run backend" command, and then the frontend with the "npm run dev" command.
 
-3. Após isso o projeto está pronto para rodar com um backend local usando o json-server.
+3. After that the project is ready to run with a local backend using json-server.
 
 
-# Sobre o projeto
+# About the project
 
-Esse é um projeto feito com intuito de estudar ReactJs e alguns pacotes e ideias mais avançadas.
+This is a project made with the intention of studying ReactJs and some more advanced packages and ideas.
 
-Esse é um projeto que trabalha com anotação e organização de orçamentos de projetos e de serviços para realizar esses projetos. Como ele é para o armazenamento de dados, esse projeto precisa de um backend, e para isso foi usado o pacote "json-server", que cria um banco de dados "fake", porém esse banco de dados só funciona em ambiente de desenvolvimento, por isso o projeto que é visto pela páginas o github está hardcode, e com as partes que manipulam a API comentadas.
+This is a project that works with noting and organizing budgets for projects and services to carry out these projects. As it is for data storage, this project needs a backend, and for that the "json-server" package was used, which creates a "fake" database, but this database only works in a development environment , so the project that is seen by the github pages is hardcoded, and with the parts that manipulate the API commented.
 
-Esse não é o projeto final, pretendo em algum momento postar ele em algum outro lugar, porém com um banco de dados funcional em ambiente de produção, não fiz isso logo porque eu ainda não tinha muito conhecimento de backend, porém agora ja sei mais sobre linguagens de backend (php) e servidores web, e logo estarei estudando sobre express e node para completar esse projeto usando somente ferramentas ue trabalham com javascript.
+This is not the final project, I intend to post it somewhere else at some point, but with a functional database in a production environment, I didn't do that right away because I still didn't have much knowledge of the backend, but now I know more about backend languages (php) and web servers, and soon I will be studying about express and node to complete this project using only tools that work with javascript.
