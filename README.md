@@ -2,9 +2,9 @@
 
 ## How to start the project:
 
-1. First you need to open the terminal inside the project and type the command "npm install" to install all the dependencies.
+1. First you need to open the terminal inside the project and type the command `npm install` to install all the dependencies.
 
-2. Then, to start the project itself, you need to run the backend with the "npm run backend" command, and then the frontend with the "npm run dev" command.
+2. Then, to start the project itself, you need to run the backend with the `npm run backend` command, and then the frontend with the `npm run dev` command.
 
 3. After that the project is ready to run with a local backend using json-server.
 
