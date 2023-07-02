@@ -29,37 +29,6 @@
     align-items: center;
     gap: .4rem;
 }
-.bolinhaProjeto{
-    display: block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-
-    /*
-    #ffaebc
-    #a0e7e5
-    #b4f8c8
-    #fbe7c6
-     */
-}
-
- .desenvolvimento{
-    background-color: #a0e7e5;
-}
-
- .infra{
-    background-color: #ffaebc;
-}
-
- .planejamento{
-    background-color: #b4f8c8;
-}
-
- .designe{
-    background-color: #fbe7c6;
-}
-
-
 
 
 /* END configuração da bolinha do lado de category */
@@ -67,8 +36,7 @@
 .divButtons{
     display: flex;
     
-    align-items: end;
-    gap: .8rem;
+    justify-content: center;
 
 }
 

@@ -18,22 +18,22 @@ export default function NewProject(){
 
         // ######### APÓS IMPLEMENTAR O BACKEND É SÓ DESCOMENTAR ESSA PARTE PARA RODAR NORMAL ##############
 
-        // fetch('http://localhost:5000/projetos',{
-        //     method: "POST",                	
-        //     body: JSON.stringify(newProject),			
-        //     headers:{
-        //         "content-type": "application/json; charset=UTF-8" 
-        //     },
+         fetch('http://localhost:5000/projetos',{
+             method: "POST",                	
+             body: JSON.stringify(newProject),			
+             headers:{
+                 "content-type": "application/json; charset=UTF-8" 
+             },
             
-        // })             
-        // .then(res => res.json())
-        // .then((r=> {
-        //     alert("Projeto postado com sucesso")
-        //     navigate("/Costs-React/projects")
+         })             
+         .then(res => res.json())
+         .then((r=> {
+             alert("Projeto postado com sucesso")
+             navigate("/Costs-React/projects")
 
             
-        // }))
-        // .catch(error=> console.log("Deu erro em algum lugar --" + error))
+         }))
+         .catch(error=> console.log("Deu erro em algum lugar --" + error))
 
         alert("Projeto postado com sucesso")
             navigate("/Costs-React/projects")
@@ -55,10 +55,7 @@ export default function NewProject(){
             <section>
                 <h1>Criar projeto</h1>
                 <p>Crie seus projetos para depois adicionar os serviços</p>
-
                 
-        
-
                <Form 
                 handleFormFunc={handleForm} 
                 submitFunc={cadUser} 

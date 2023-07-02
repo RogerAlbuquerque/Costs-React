@@ -17,8 +17,6 @@ export default function Projects(){
         })
         .then(response => response.json())
         .then(data => {
-                        // console.log("A parte da API deu certo ")
-                        // console.log(data)
                         setapiData(data)
                     })
         .catch(error => console.error("Deu um erro por causa disso aqui: " + error))
@@ -50,7 +48,7 @@ export default function Projects(){
                         id="1"                     
                        
                     /> 
-                     <BoxProjects 
+                     {/* <BoxProjects 
                         title="Projeto 2" 
                         budget="2000" 
                         textBudget="Orçamento"
@@ -81,7 +79,7 @@ export default function Projects(){
                         category="infra"
                         id="5"                        
                        
-                    /> 
+                    />  */}
 
                    
                  

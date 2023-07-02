@@ -1,47 +1,6 @@
 {
   "projetos": [
     {
-      "PName": "Novo time de frontend",
-      "PBudget": "50000",
-      "PCategory": "desenvolvimento",
-      "cost": 0,
-      "services": [
-        {
-          "SName": "teste 1",
-          "SBudget": "1000",
-          "SDescricao": "Descrição do projeto aqui"
-        },
-        {
-          "SName": "Teste 2",
-          "SBudget": "2000",
-          "SDescricao": "Descrição do projeto aqui"
-        }
-      ],
-      "id": 2
-    },
-    {
-      "PName": "Contratar gerente Senior para devs",
-      "PBudget": "40000",
-      "PCategory": "planejamento",
-      "cost": 0,
-      "services": [
-        {
-          "SName": "Serviço teste",
-          "SBudget": "1000",
-          "": "Serviço de teste"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "PName": "Atualizar o hardware do banco de dados",
-      "PBudget": "100000",
-      "PCategory": "infra",
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
       "PName": "Contratar Scrum Master",
       "PBudget": "8000",
       "PCategory": "planejamento",
@@ -80,18 +39,10 @@
       "id": 7
     },
     {
-      "PName": "agora novo",
-      "PBudget": "11111111",
+      "PName": "TESTE",
+      "PBudget": "1200",
       "PCategory": "desenvolvimento",
-      "cost": 0,
-      "services": [],
-      "id": 8
-    },
-    {
-      "PName": "132413412",
-      "PBudget": "1234",
-      "PCategory": "desenvolvimento",
-      "cost": 0,
+      "cost": 1234,
       "services": [],
       "id": 9
     }

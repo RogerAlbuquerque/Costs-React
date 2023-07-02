@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
-import BoxProjects from '../AllProjects/boxesProjects/boxProjects'
+import BoxServices from './boxesServices/boxServices'
 import "./Services.css"
 import Form from '../../../extraComponents/Forms/forms'
 import Button from '../../../extraComponents/Buttons'
@@ -9,6 +9,15 @@ import Button from '../../../extraComponents/Buttons'
 
 
 export default function Services(){
+
+    //----------------  HOOKS ---------------
+
+    const { id } = useParams();
+    const [dataService, setdataService] = useState ([])
+    const [buttonService, setbuttonService] = useState("Adicionar serviço")
+    const [editProj, setEditProj] = useState("Editar projeto")
+    const [serviceForm, setServiceForm] = useState ()
+    const [editForm, setEditForm] = useState ()
 
     useEffect(()=>{
         fetch(`http://localhost:5000/projetos/${id}`, {
@@ -54,11 +63,33 @@ export default function Services(){
     }
     
 
+    function removeService (data){
+        console.log(data)
 
+        let serviceToDelete = dataService.services.find(obj => obj.SName == data.SName)
+        let serviceIndex = dataService.services.indexOf(serviceToDelete)
 
+        serviceIndex > -1 && dataService.services.splice(serviceIndex,1)
+        console.log(dataService.services)
+        
+          fetch(`http://localhost:5000/projetos/${id}`,{
+             method: "PATCH",                	
+             body: JSON.stringify(dataService),			
+             headers:{
+                 "content-type": "application/json; charset=UTF-8" 
+             },
+            
+         })             
+         .then(res => res.json())
+         .then((r=> {
+             alert("Serviço removido")
+             location.reload()       
+         }))
+         .catch(error=> console.log("Deu erro em algum lugar --" + error))
 
-
-
+        
+    }
+    
 
     function cadService (x){
         x.preventDefault(x)
@@ -70,10 +101,6 @@ export default function Services(){
             alert("O VALOR ULTRAPASSOU O ORÇAMENTO DELIMITADO")
         }
 
-
-        
-        
-        
         dataService.services.push(serviceForm)
         
          fetch(`http://localhost:5000/projetos/${id}`,{
@@ -86,14 +113,13 @@ export default function Services(){
         })             
         .then(res => res.json())
         .then((r=> {
-            alert("Projeto postado com sucesso")
+            alert("Serviço salvo com sucesso")
             location.reload()           
 
             
         }))
         .catch(error=> console.log("Deu erro em algum lugar --" + error))
 
-      
         
     }
 
@@ -132,52 +158,24 @@ export default function Services(){
     }
 
 
-//----------------  HOOKS ---------------
-
-    const { id } = useParams();
-    const [dataService, setdataService] = useState ([])
-    
-
-    const [buttonService, setbuttonService] = useState("Adicionar serviço")
-    const [editProj, setEditProj] = useState("Editar projeto")
-
-    const [serviceForm, setServiceForm] = useState ()
-    const [editForm, setEditForm] = useState ()
-    
-
-
-
-
-
-
-
-
-
-
-
 
     
-
-
 
 
     return(
     
         <article className="services">
              {/*########### PARTE DO PROJETO CASO A API ESTEJA FUNCIONANDO ################ */}
-            {/* <section className="headerServices">
+            <section className="headerServices">
                 <h1>{dataService.PName}</h1>
-                <Button nomeBotao={editProj} handleFunc={buttonEditForm}/>
-            </section> */}
-
-
-<section className="headerServices">
-                <h1>Titulo do projeto</h1>
                 <Button nomeBotao={editProj} handleFunc={buttonEditForm}/>
             </section>
 
 
-
+            {/* <section className="headerServices">
+                <h1>Titulo do projeto</h1>
+                <Button nomeBotao={editProj} handleFunc={buttonEditForm}/>
+            </section> */}
 
             
             
@@ -196,35 +194,25 @@ export default function Services(){
 
             <article className="handleServiceArea">
                 {/*########### PARTE DO PROJETO CASO A API ESTEJA FUNCIONANDO ################ */}
-                {/* <section id='projectData'>
+                <section id='projectData'>
                     <p><strong>Categoria</strong>: {dataService.PCategory}</p>
                     <p><strong>Total do orçamento</strong>:{dataService.PBudget}</p>
                     <p><strong>Total utilizado</strong>: R${dataService.cost}</p>
-                </section> */}
+                </section>  
 
-                   
-                   
-                    {/*########### PARTE DO PROJETO CASO A API ESTEJA FUNCIONANDO ################ */}
-                    {/* <section id='projectData'>
-                    <p><strong>Categoria</strong>: {dataService.PCategory}</p>
-                    <p><strong>Total do orçamento</strong>:{dataService.PBudget}</p>
-                    <p><strong>Total utilizado</strong>: R${dataService.cost}</p> 
-                    </section>       */}
-
-
-                    <section id='projectData'>
-                    <p><strong>Categoria</strong>:Infraestrutura</p>
-                    <p><strong>Total do orçamento</strong>:20000</p>
-                    <p><strong>Total utilizado</strong>: R$200</p> 
-                    </section>  
+                {/* ########### EXEMPLOS SEM A API ################  */}
+                {/* <section id='projectData'>
+                <p><strong>Categoria</strong>:Infraestrutura</p>
+                <p><strong>Total do orçamento</strong>:20000</p>
+                <p><strong>Total utilizado</strong>: R$200</p> 
+                </section>   */}
 
                 
 
                 <section className="addServices">
                    <div className="addServiceHeader">
                         <h1>Adicione um serviço:</h1>
-                        <Button nomeBotao={buttonService} handleFunc={addService}/>
-                        
+                        <Button nomeBotao={buttonService} handleFunc={addService}/>                        
                    </div>
 
 
@@ -272,22 +260,23 @@ export default function Services(){
                         <h1>Serviços:</h1>
                     </div>                 
                
-                
-                
                     <div className="listServices"> 
                         <h1></h1>
      {/*########### PARTE DO PROJETO CASO A API ESTEJA FUNCIONANDO ################ */}
-                        {/* {dataService.services && dataService.services.map((dados)=>                   
-                            <BoxProjects 
-                                title={dados.SName} 
+                        {dataService.services && dataService.services.map((dados)=>                   
+                            <BoxServices
+                                title={dados.SName}
                                 budget={dados.SBudget} 
                                 textBudget="Valor total"
                                 descricao = {dados.SDescricao}
+                                delServiceFunc={() => removeService(dados)}
                                 key={dados.SName}
                             />
-                        )} */}
+                        )}
 
-                            <BoxProjects 
+                            
+                            {/* ########### EXEMPLOS SEM A API ################  */}
+                            {/* <BoxProjects 
                                 title="Titulo do Serviço"
                                 budget="R$ 200"
                                 textBudget="Valor total"
@@ -301,25 +290,10 @@ export default function Services(){
                                 textBudget="Valor total"
                                 descricao = "Parte que descreve qual o serviço e o que fazer"
                                 key="key"
-                            />
-
+                            /> */}
 
                     </div>
-                
-                
-               
-
-                       
-
-
-
-
-                
-                    
                 </section>
-
-        
-
             </article>
            
         </article>
