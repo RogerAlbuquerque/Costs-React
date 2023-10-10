@@ -1,4 +1,5 @@
 # Costs-React
+A website to manage the budget that you need to use in projects on your business. Don't be afraid, all of your data will be save only in your browser
 
 ## How to start the project:
 
