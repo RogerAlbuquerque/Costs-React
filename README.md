@@ -1,5 +1,5 @@
 # Costs-React
-
+[Link to application](https://rogeralbuquerque.github.io/Costs-React/)
 ## Overview
 
 Costs-React is a front-end web application built with React and Vite to support project budget management. The system allows creating projects, listing existing projects, editing project details, and managing services associated with each project. The application uses a local simulated backend with `json-server`, providing a CRUD experience during development.
